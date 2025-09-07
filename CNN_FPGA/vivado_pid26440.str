@@ -100,3 +100,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'. 
 // HMemoryUtils.trashcanNow. Engine heap size: 945 MB. GUI used memory: 65 MB. Current time: 9/7/25, 12:18:13 PM CST
+// Project name: CNN_FPGA; location: D:/Material/CSDP/CNN_FPGA; part: xc7z020clg400-3
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 123 MB (+1152kb) [00:02:30]

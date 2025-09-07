@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project D:/Material/CSDP/CNN_FPGA/CNN_FPGA.xpr
+update_compile_order -fileset sources_1
