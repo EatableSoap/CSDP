@@ -1,0 +1,8 @@
+{
+    "FPGA_Tree_TOP": {
+        "filePaths": [
+            "d:\\Material\\CSDP\\CNN_FPGA\\CNN_FPGA.sim\\sources_1\\TB\\padding_TB.v"
+        ],
+        "fileName": "padding_TB.v"
+    }
+}

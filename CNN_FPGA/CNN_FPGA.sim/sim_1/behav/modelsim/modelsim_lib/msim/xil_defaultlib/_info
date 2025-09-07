@@ -1,0 +1,964 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dd:/Material/CSDP/CNN_FPGA/CNN_FPGA.sim/sim_1/behav/modelsim
+T_opt
+!s110 1757217998
+VIhgWPMOig7Sm7MfHGiH][0
+04 8 4 work Lenet_TB fast 0
+Z1 04 4 4 work glbl fast 0
+=1-00e2697224a5-68bd04ce-56-566c
+Z2 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2019.2;69
+R0
+T_opt1
+!s110 1757180261
+VJ12:^^3beFQG^o]KRzX<P3
+04 18 4 work convLayerSingle_TB fast 0
+R1
+=1-00e2697224a5-68bc7165-14a-6f18
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1757184054
+VBPWkQ7R5>;obX<Kb=];z[1
+04 10 4 work ANNfull_TB fast 0
+R1
+=1-00e2697224a5-68bc8036-2aa-2abc
+R2
+R3
+n@_opt2
+R4
+R0
+vactivationFunction
+!s10a 1756896279
+Z5 !s110 1757187321
+!i10b 1
+!s100 :Xa0Deg5fPH=So_?OzW343
+!s11b :V;aSKYkHmD?fY=?aC6]c1
+I83?JDgML74RbP>?zJ@GYf0
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dD:/Material/CSDP/CNN_FPGA/CNN_FPGA.sim/sim_1/behav/modelsim
+w1756896279
+8../../../sources_1/imports/activationFunction.v
+F../../../sources_1/imports/activationFunction.v
+L0 1
+Z8 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z9 !s108 1757187321.000000
+Z10 !s107 ../../../sources_1/TB/Lenet_TB.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/processingElement.v|../../../sources_1/new/padding.v|../../../sources_1/imports/max.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/imports/UsingTheRelu16.v|../../../sources_1/imports/RFselector.v|../../../sources_1/imports/MaxPoolSingle.v|../../../sources_1/imports/MaxPoolMulti.v|../../../sources_1/new/Lenet.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/imports/IEEE162IEEE32.v|../../../sources_1/new/FindMax.v|../../../sources_1/new/ANNfull.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/new/ANNfull.v|../../../sources_1/new/FindMax.v|../../../sources_1/imports/IEEE162IEEE32.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/new/Lenet.v|../../../sources_1/imports/MaxPoolMulti.v|../../../sources_1/imports/MaxPoolSingle.v|../../../sources_1/imports/RFselector.v|../../../sources_1/imports/UsingTheRelu16.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/max.v|../../../sources_1/new/padding.v|../../../sources_1/imports/processingElement.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/TB/Lenet_TB.v|
+!i113 0
+Z12 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+nactivation@function
+vANNfull
+!s10a 1757216145
+!s110 1757216183
+!i10b 1
+!s100 S?S?Ua:Y[j];[A@I7o:381
+!s11b 7WVc9dAgl5LcCi0Y?h0GC1
+IlWeY3g?VhBzSo7nA]d:d82
+R6
+R7
+w1757216145
+8../../../sources_1/new/ANNfull.v
+F../../../sources_1/new/ANNfull.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1757216183.000000
+R10
+R11
+!i113 0
+R12
+R3
+n@a@n@nfull
+vANNfull_TB
+!s10a 1757180622
+!s110 1757177202
+!i10b 1
+!s100 9Nkgil0VHGdE<8<4@MjJH1
+!s11b WR0QOj=I0BX_B;f>PFhZ_2
+I;93SlA[a2S9OTBfA3<?1o0
+R6
+R7
+w1757177108
+8../../../sources_1/TB/ANNfull_TB.v
+F../../../sources_1/TB/ANNfull_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1757177202.000000
+!s107 ../../../sources_1/TB/ANNfull_TB.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/imports/processingElement.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/new/FindMax.v|../../../sources_1/new/ANNfull.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/new/ANNfull.v|../../../sources_1/new/FindMax.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/processingElement.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/TB/ANNfull_TB.v|
+!i113 0
+R12
+R3
+n@a@n@nfull_@t@b
+vconvLayerMulti
+!s10a 1757062961
+!s110 1756878091
+!i10b 1
+!s100 iNAm<[J?AE40[jdRhl9EY0
+!s11b W2_8`5QVj@Ha?m]`]hO`n3
+IzAONSePF7zGg@AR_AQcb?0
+R6
+R7
+w1756877826
+8../../../sources_1/new/convLayerMulti.v
+F../../../sources_1/new/convLayerMulti.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1756878091.000000
+Z13 !s107 ../../../sources_1/TB/convLayerMulti_TB.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/new/padding.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/RFselector.v|
+Z14 !s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/RFselector.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/new/padding.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/TB/convLayerMulti_TB.v|
+!i113 0
+R12
+R3
+nconv@layer@multi
+vconvLayerMulti_TB
+!s110 1756911804
+!i10b 1
+!s100 09i@VXejddkg2o5d5L6Sl1
+!s11b 749:aVCjDM8hNSWFKQ]bU2
+Ij7Md>YYjj>z3gGOW]@I?R3
+R6
+R7
+w1756911792
+8../../../sources_1/TB/convLayerMulti_TB.v
+F../../../sources_1/TB/convLayerMulti_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756911804.000000
+R13
+R14
+!i113 0
+R12
+R3
+nconv@layer@multi_@t@b
+vconvLayerSingle
+!s10a 1756886091
+Z15 !s110 1756887232
+!i10b 1
+!s100 gV5QMBRFSn3TkSGN2:Jz63
+!s11b 7W_zMA21e9>WRzE0PJMge1
+I4XnAQQfFB`?;0U1d:gLb93
+R6
+R7
+w1756886091
+8../../../sources_1/imports/convLayerSingle.v
+F../../../sources_1/imports/convLayerSingle.v
+L0 3
+R8
+r1
+!s85 0
+31
+Z16 !s108 1756887232.000000
+Z17 !s107 ../../../sources_1/TB/convLayerSingle_TB.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/imports/RFselector.v|
+Z18 !s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/RFselector.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/TB/convLayerSingle_TB.v|
+!i113 0
+R12
+R3
+nconv@layer@single
+vconvLayerSingle_TB
+!s10a 1756887201
+R15
+!i10b 1
+!s100 QoADz]C@KoNJhF2FRegZK2
+!s11b ?MX]>_RNfN`JL985F:J`W0
+If5[AA0=8]b68b2T8:JA5?3
+R6
+R7
+w1756887201
+8../../../sources_1/TB/convLayerSingle_TB.v
+F../../../sources_1/TB/convLayerSingle_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R12
+R3
+nconv@layer@single_@t@b
+vconvUnit
+!s10a 1757180248
+!s110 1757180256
+!i10b 1
+!s100 849>:nOgFGF3VanZj735Z1
+!s11b W=EA3[dO=JGChAbO?4dHX2
+IFcmeDzR]570=:zQHKYMZH1
+R6
+R7
+w1757180248
+8../../../sources_1/imports/convUnit.v
+F../../../sources_1/imports/convUnit.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1757180256.000000
+R17
+R18
+!i113 0
+R12
+R3
+nconv@unit
+vconvUnit_TB
+!s10a 1756884953
+!s110 1756884967
+!i10b 1
+!s100 BBF=7FSmCO9>D^ZY74J2^2
+!s11b LMZUNJaebC_fein:`GcWc0
+IZjaT>K6fP>7EMefn2Ij<_0
+R6
+R7
+w1756884953
+8../../../sources_1/TB/convUnit_TB.v
+F../../../sources_1/TB/convUnit_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756884967.000000
+!s107 ../../../sources_1/TB/convUnit_TB.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/convUnit.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/TB/convUnit_TB.v|
+!i113 0
+R12
+R3
+nconv@unit_@t@b
+vFindMax
+!s10a 1757182329
+!s110 1757173434
+!i10b 1
+!s100 Oh[[=1EXH@e1iUZOCb[[b0
+!s11b Tok`WK2JJ39[[_0J;SN0a0
+IXMXk_o`UmeH;D18JPbL<92
+R6
+R7
+w1757173425
+8../../../sources_1/new/FindMax.v
+F../../../sources_1/new/FindMax.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1757173434.000000
+R10
+R11
+!i113 0
+R12
+R3
+n@find@max
+vFindMax_TB
+!s110 1756908237
+!i10b 1
+!s100 IF;EaIhoJa1BoX3BebDzX1
+!s11b ^Q^8nMZNc3[Gmd;Yd03O]3
+ICnmXHE0FboIUdzo<OI@bo0
+R6
+R7
+w1756908229
+8../../../sources_1/TB/FindMax_TB.v
+F../../../sources_1/TB/FindMax_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756908236.000000
+!s107 ../../../sources_1/TB/FindMax_TB.v|../../../sources_1/imports/FindMax.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/FindMax.v|../../../sources_1/TB/FindMax_TB.v|
+!i113 0
+R12
+R3
+n@find@max_@t@b
+vfloatAdd
+!s10a 1757180092
+R5
+!i10b 1
+!s100 3?c@Rh=cNzBKjz@51M>lS2
+!s11b c:G@IPO6V>TG`eI7]c;LS1
+Ik[1C7EG8^D0O_a9XCUf>d3
+R6
+R7
+w1757180092
+8../../../sources_1/imports/floatAdd.v
+F../../../sources_1/imports/floatAdd.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R3
+nfloat@add
+vfloatAdd16
+Z19 !s10a 1756622304
+Z20 !s110 1756871683
+!i10b 1
+!s100 @`P?m[i@>`4HC_^jIMA@:3
+!s11b ai46_oXOhaQ]7<Nb>1o]i0
+I]WQNK;1idU^Ng2GldI75i1
+R6
+R7
+Z21 w1756622304
+8../../../sources_1/imports/floatAdd16.v
+F../../../sources_1/imports/floatAdd16.v
+L0 3
+R8
+r1
+!s85 0
+31
+Z22 !s108 1756871683.000000
+R17
+R18
+!i113 0
+R12
+R3
+nfloat@add16
+vfloatAdd16_TB
+!s110 1756881381
+!i10b 1
+!s100 HF9_Uk95:2eLXIhCh]n<>0
+!s11b F3mV]T:DGTc7b7b;]KP3U1
+IBR0DKWe0@Ee`e0VD>QF0S0
+R6
+R7
+w1756798977
+8../../../sources_1/TB/floatAdd16_TB.v
+F../../../sources_1/TB/floatAdd16_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756881381.000000
+!s107 ../../../sources_1/TB/floatAdd16_TB.v|../../../sources_1/imports/floatAdd16.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/floatAdd16.v|../../../sources_1/TB/floatAdd16_TB.v|
+!i113 0
+R12
+R3
+nfloat@add16_@t@b
+vfloatMult
+!s10a 1757180089
+R5
+!i10b 1
+!s100 P07EL`HPW_nNfTLCfCKgd2
+!s11b Eobj`a;Tj4BKVDXLXBh<T2
+IMHaGXRh;MJ^7`E_;7J<M20
+R6
+R7
+w1757180089
+8../../../sources_1/imports/floatMult.v
+F../../../sources_1/imports/floatMult.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R3
+nfloat@mult
+vfloatMult16
+R19
+R20
+!i10b 1
+!s100 RIi1GTbK6Ok;N>GUN_=1L1
+!s11b ?aEIC9N8YSi]<cQ6g^9963
+I>UTO_:;:MfQW6c0:Sd<P20
+R6
+R7
+R21
+8../../../sources_1/imports/floatMult16.v
+F../../../sources_1/imports/floatMult16.v
+L0 3
+R8
+r1
+!s85 0
+31
+R22
+R17
+R18
+!i113 0
+R12
+R3
+nfloat@mult16
+vfloatMult16_TB
+!s110 1756884075
+!i10b 1
+!s100 :4iQOoFP1Qz6TAPoj_ma21
+!s11b ]z];Aj6=QP1gKf0b]2?PF0
+IkeZCRD:h3l?BikHYY]Ahz2
+R6
+R7
+w1756799002
+8../../../sources_1/TB/floatMult16_TB.v
+F../../../sources_1/TB/floatMult16_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756884075.000000
+!s107 ../../../sources_1/TB/floatMult16_TB.v|../../../sources_1/imports/floatMult16.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/floatMult16.v|../../../sources_1/TB/floatMult16_TB.v|
+!i113 0
+R12
+R3
+nfloat@mult16_@t@b
+vglbl
+!s110 1757218295
+!i10b 1
+!s100 DCW3=ePZ4oEojGg2KL;HS0
+!s11b :OElb9;ejghaOl1Q4Ld<o3
+ITNN_cbZIG@:>zYe@^CH>f0
+R6
+R7
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+R8
+r1
+!s85 0
+31
+!s108 1757218295.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vIEEE162IEEE32
+R19
+Z23 !s110 1757128973
+!i10b 1
+!s100 915hl>VODz_i;Ra>WmD]a1
+!s11b F]:O4J24Oz>A:5J6j3b]a1
+I<E?P?ZcIP?HcYRP1SIb<51
+R6
+R7
+R21
+8../../../sources_1/imports/IEEE162IEEE32.v
+F../../../sources_1/imports/IEEE162IEEE32.v
+L0 1
+R8
+r1
+!s85 0
+31
+Z24 !s108 1757128972.000000
+Z25 !s107 ../../../sources_1/TB/Lenet_TB.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/processingElement.v|../../../sources_1/new/padding.v|../../../sources_1/imports/max.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/imports/UsingTheRelu16.v|../../../sources_1/imports/RFselector.v|../../../sources_1/imports/MaxPoolSingle.v|../../../sources_1/imports/MaxPoolMulti.v|../../../sources_1/new/Lenet.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/imports/IEEE162IEEE32.v|../../../sources_1/imports/FindMax.v|../../../sources_1/new/ANNfull.v|
+Z26 !s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/new/ANNfull.v|../../../sources_1/imports/FindMax.v|../../../sources_1/imports/IEEE162IEEE32.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/new/Lenet.v|../../../sources_1/imports/MaxPoolMulti.v|../../../sources_1/imports/MaxPoolSingle.v|../../../sources_1/imports/RFselector.v|../../../sources_1/imports/UsingTheRelu16.v|../../../sources_1/imports/activationFunction.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/convLayerSingle.v|../../../sources_1/imports/convUnit.v|../../../sources_1/imports/floatAdd.v|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/layer.v|../../../sources_1/imports/max.v|../../../sources_1/new/padding.v|../../../sources_1/imports/processingElement.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/weightMemory.v|../../../sources_1/TB/Lenet_TB.v|
+!i113 0
+R12
+R3
+n@i@e@e@e162@i@e@e@e32
+vintegrationConv
+!s10a 1757146739
+Z27 !s110 1757146765
+!i10b 1
+!s100 ]UoBi]AdVSdY]66=SC5g11
+!s11b O]hXoFV62zkD7@942?a@71
+I@hHhG^[Y6iBG`3ZPVUV>Y0
+R6
+R7
+w1757146739
+8../../../sources_1/new/IntegrationConvPart.v
+F../../../sources_1/new/IntegrationConvPart.v
+L0 1
+R8
+r1
+!s85 0
+31
+Z28 !s108 1757146765.000000
+R25
+R26
+!i113 0
+R12
+R3
+nintegration@conv
+vIntegrationConvPart_TB
+!s110 1757063144
+!i10b 1
+!s100 V5:f0iMdIeFQa9ak?aPFo0
+!s11b <]dGmH[JmGYYOzfzNTdFQ1
+I<bYjGY]3[B5B<T0z8Y;VX2
+R6
+R7
+w1756830183
+8../../../sources_1/TB/IntegrationConvPart_TB.v
+F../../../sources_1/TB/IntegrationConvPart_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1757063144.000000
+!s107 ../../../sources_1/TB/IntegrationConvPart_TB.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/TB/IntegrationConvPart_TB.v|
+!i113 0
+R12
+R3
+n@integration@conv@part_@t@b
+vlayer
+!s10a 1757181155
+R5
+!i10b 1
+!s100 ]?laek9aR>c1KkOhY;4F=0
+!s11b go`zYQWJDoQH4W:BjV_;C2
+IeG;1cU8^<=i?mN>EV2ZFX2
+R6
+R7
+w1757181155
+8../../../sources_1/imports/layer.v
+F../../../sources_1/imports/layer.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R3
+vLenet
+!s10a 1757146752
+R27
+!i10b 1
+!s100 c@=gSOHfH04SGQo6gfK:i2
+!s11b 8B1A[:`nEnboVAo_cZE>X3
+IHlSm]=CR3JMRHel6CaI_Q3
+R6
+R7
+w1757146752
+8../../../sources_1/new/Lenet.v
+F../../../sources_1/new/Lenet.v
+L0 1
+R8
+r1
+!s85 0
+31
+R28
+R25
+R26
+!i113 0
+R12
+R3
+n@lenet
+vlenet_TB
+Z29 !s110 1756818221
+!i10b 1
+!s100 h@NjSW<Z1^BY<KMlV=cBW3
+!s11b IBd[dKm3PVRXAFa3AVeFL0
+IgbNdbiPJ3Jnl;ioGSCE6Z0
+R6
+R0
+R21
+8../../../sources_1/imports/Integration first part/TB/lenet_TB.v
+F../../../sources_1/imports/Integration first part/TB/lenet_TB.v
+L0 1
+R8
+r1
+!s85 0
+31
+Z30 !s108 1756818221.000000
+Z31 !s107 ../../../sources_1/imports/Integration first part/weightMemory.v|../../../sources_1/imports/Integration first part/TB/softmax_TB.v|../../../sources_1/imports/Integration first part/processingElement16.v|../../../sources_1/imports/Integration first part/processingElement.v|../../../sources_1/new/padding.v|../../../sources_1/imports/Integration first part/max.v|../../../sources_1/imports/Integration first part/TB/lenet_TB.v|../../../sources_1/imports/Integration first part/layer.v|../../../sources_1/imports/Integration first part/floatMult16.v|../../../sources_1/imports/Integration first part/floatMult.v|../../../sources_1/imports/Integration first part/floatAdd16.v|../../../sources_1/imports/Integration first part/floatAdd.v|../../../sources_1/imports/Integration first part/convUnit.v|../../../sources_1/imports/Integration first part/convLayerSingle.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/Integration first part/activationFunction.v|../../../sources_1/imports/Integration first part/UsingTheRelu16.v|../../../sources_1/imports/Integration first part/UsingTheRelu.v|../../../sources_1/imports/Integration first part/RFselector.v|../../../sources_1/imports/Integration first part/MaxPoolSingle.v|../../../sources_1/imports/Integration first part/MaxPoolMulti.v|../../../sources_1/new/Lenet.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/imports/Integration first part/IEEE162IEEE32.v|../../../sources_1/imports/Integration first part/FindMax.v|../../../sources_1/new/ANNfull.v|
+Z32 !s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/new/ANNfull.v|../../../sources_1/imports/Integration first part/FindMax.v|../../../sources_1/imports/Integration first part/IEEE162IEEE32.v|../../../sources_1/new/IntegrationConvPart.v|../../../sources_1/new/Lenet.v|../../../sources_1/imports/Integration first part/MaxPoolMulti.v|../../../sources_1/imports/Integration first part/MaxPoolSingle.v|../../../sources_1/imports/Integration first part/RFselector.v|../../../sources_1/imports/Integration first part/UsingTheRelu.v|../../../sources_1/imports/Integration first part/UsingTheRelu16.v|../../../sources_1/imports/Integration first part/activationFunction.v|../../../sources_1/new/convLayerMulti.v|../../../sources_1/imports/Integration first part/convLayerSingle.v|../../../sources_1/imports/Integration first part/convUnit.v|../../../sources_1/imports/Integration first part/floatAdd.v|../../../sources_1/imports/Integration first part/floatAdd16.v|../../../sources_1/imports/Integration first part/floatMult.v|../../../sources_1/imports/Integration first part/floatMult16.v|../../../sources_1/imports/Integration first part/layer.v|../../../sources_1/imports/Integration first part/TB/lenet_TB.v|../../../sources_1/imports/Integration first part/max.v|../../../sources_1/new/padding.v|../../../sources_1/imports/Integration first part/processingElement.v|../../../sources_1/imports/Integration first part/processingElement16.v|../../../sources_1/imports/Integration first part/TB/softmax_TB.v|../../../sources_1/imports/Integration first part/weightMemory.v|
+!i113 0
+R12
+R3
+nlenet_@t@b
+vLenet_TB
+!s10a 1757217986
+!s110 1757217993
+!i10b 1
+!s100 M:z7GCn@TXI`D52cR9I]I0
+!s11b dhQ]dYaE[IMPCOOAInKQG0
+ID9_TW5iM9ieZ2Y;TgfK;R2
+R6
+R7
+w1757217986
+8../../../sources_1/TB/Lenet_TB.v
+F../../../sources_1/TB/Lenet_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1757217993.000000
+R10
+R11
+!i113 0
+R12
+R3
+n@lenet_@t@b
+vmax
+R19
+R23
+!i10b 1
+!s100 >Zh;V4IfTLZFWPg9CSVeh0
+!s11b ]m^BzY20o8<G4g63BF9@i0
+IfkB38;_C[IczA;2h;37K:3
+R6
+R7
+R21
+8../../../sources_1/imports/max.v
+F../../../sources_1/imports/max.v
+L0 1
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R12
+R3
+vMaxPoolMulti
+R19
+R23
+!i10b 1
+!s100 NCGO@S3HXYcL9k4LL<JoY2
+!s11b 8<@VcYIocc0047EFeI:]J3
+Ic=8`A>cmJ16Nm8;cAaL4m0
+R6
+R7
+R21
+8../../../sources_1/imports/MaxPoolMulti.v
+F../../../sources_1/imports/MaxPoolMulti.v
+L0 3
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R12
+R3
+n@max@pool@multi
+vMaxPoolSingle
+R19
+R23
+!i10b 1
+!s100 KG7k7L:zf7S1TmijkfS<J3
+!s11b @aG@f1chfC07KhJ9m8B6K3
+IX1@Z`2CBzSenDcU:HjS0i2
+R6
+R7
+R21
+8../../../sources_1/imports/MaxPoolSingle.v
+F../../../sources_1/imports/MaxPoolSingle.v
+L0 3
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R12
+R3
+n@max@pool@single
+vpadding
+!s10a 1757067277
+R23
+!i10b 1
+!s100 `]h]8hSme?K59V1VO]9AL1
+!s11b ;<mT_LlW2?zAEkoz3Im1V1
+InJH2lmZgMOVRT_dI6Dke72
+R6
+R7
+w1757067277
+8../../../sources_1/new/padding.v
+F../../../sources_1/new/padding.v
+L0 3
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R12
+R3
+vpadding_TB
+!s10a 1756823029
+!s110 1756823038
+!i10b 1
+!s100 [=kWL?BGO3UhafDj`>f:F1
+!s11b igmfF^DhLkDfNUibU[KAf2
+ImbC=h3[X5NU`QPYKenAN^3
+R6
+R7
+w1756823029
+8../../../sources_1/TB/padding_TB.v
+F../../../sources_1/TB/padding_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756823038.000000
+!s107 ../../../sources_1/TB/padding_TB.v|../../../sources_1/new/padding.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/new/padding.v|../../../sources_1/TB/padding_TB.v|
+!i113 0
+R12
+R3
+npadding_@t@b
+vprocessingElement
+!s10a 1757180059
+R5
+!i10b 1
+!s100 G?3fIcCdBzzgU[_MZkPm90
+!s11b M?dNF=kVL`?lg2NFkR;Kb1
+IT[2WV_=fj?Eg2ba=_k3EV2
+R6
+R7
+w1757180059
+8../../../sources_1/imports/processingElement.v
+F../../../sources_1/imports/processingElement.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R3
+nprocessing@element
+vprocessingElement16
+!s10a 1756883386
+R20
+!i10b 1
+!s100 ID1CIK]B;T]mU=cZTPz3:3
+!s11b E0e_VnE8<Z0k:7Z4E<=nT2
+IY_TnjEP`ZVL1kV3PSUF6b1
+R6
+R7
+R21
+8../../../sources_1/imports/processingElement16.v
+F../../../sources_1/imports/processingElement16.v
+L0 3
+R8
+r1
+!s85 0
+31
+R22
+R17
+R18
+!i113 0
+R12
+R3
+nprocessing@element16
+vprocessingElement16_TB
+!s110 1756879380
+!i10b 1
+!s100 X1HdEUE[RDc6321:6jPiX3
+!s11b A;cEPRbed]o26mjL[d[0N2
+ITa5afS0inK2^b28;;?1A71
+R6
+R7
+w1756829689
+8../../../sources_1/TB/processingElement16_TB.v
+F../../../sources_1/TB/processingElement16_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756879380.000000
+!s107 ../../../sources_1/TB/processingElement16_TB.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/floatAdd16.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/imports/floatAdd16.v|../../../sources_1/imports/floatMult16.v|../../../sources_1/imports/processingElement16.v|../../../sources_1/TB/processingElement16_TB.v|
+!i113 0
+R12
+R3
+nprocessing@element16_@t@b
+vRFselector
+R19
+R20
+!i10b 1
+!s100 dhVin?B^Zl5IR37bfMk=G1
+!s11b B_;@kF]JY5P<h:a[AUZ]N3
+IN>YSK>5O4Y7`66:[Bzgbb1
+R6
+R7
+R21
+8../../../sources_1/imports/RFselector.v
+F../../../sources_1/imports/RFselector.v
+L0 3
+R8
+r1
+!s85 0
+31
+R22
+R17
+R18
+!i113 0
+R12
+R3
+n@r@fselector
+vsoftmax_tb
+R29
+!i10b 1
+!s100 ]GdzfPGFbh2nkniGllzD43
+!s11b JMNzQ_nS0`3E_7NFRPQ910
+IUz]Q3DQ9264Pd9N<NZK?70
+R6
+R0
+R21
+8../../../sources_1/imports/Integration first part/TB/softmax_TB.v
+F../../../sources_1/imports/Integration first part/TB/softmax_TB.v
+L0 2
+R8
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R12
+R3
+vUsingTheRelu
+R29
+!i10b 1
+!s100 o4MDF:RMeL_VU=f:eeJz@0
+!s11b XDGj8<>Ih=D_YhXP]iOEL0
+IcjmS=FV=4BWCA`KCI9jEf0
+R6
+R0
+R21
+8../../../sources_1/imports/Integration first part/UsingTheRelu.v
+F../../../sources_1/imports/Integration first part/UsingTheRelu.v
+L0 23
+R8
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R12
+R3
+n@using@the@relu
+vUsingTheRelu16
+!s10a 1757177092
+!s110 1757181120
+!i10b 1
+!s100 6B7k3QOVFK@A;^Dc;<F7_2
+!s11b f1=o[mPEY[=lk<fO8jC`z3
+IG;l]db_M3?mJEj=V=935j0
+R6
+R7
+w1757177092
+8../../../sources_1/imports/UsingTheRelu16.v
+F../../../sources_1/imports/UsingTheRelu16.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1757181120.000000
+R10
+R11
+!i113 0
+R12
+R3
+n@using@the@relu16
+vUsingTheRelu16_TB
+!s110 1756870275
+!i10b 1
+!s100 A0HS^cOnIN3@PiP[]IUN:1
+!s11b GYz^<3YzOU5nlD2Vgik;N3
+I6TQMX>JAUAJekK:fEiU592
+R6
+R7
+w1756869815
+8../../../sources_1/TB/UsingTheRelu16_TB.v
+F../../../sources_1/TB/UsingTheRelu16_TB.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1756870275.000000
+!s107 ../../../sources_1/TB/UsingTheRelu16_TB.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../sources_1/TB/UsingTheRelu16_TB.v|
+!i113 0
+R12
+R3
+n@using@the@relu16_@t@b
+vweightMemory
+!s10a 1757179778
+R5
+!i10b 1
+!s100 mKEad0YMNl]3=B<j5^90^1
+!s11b LY_JCDlZHB>I@Xjg<_^C10
+ID1jJK571CXOFaPcXDg7YR1
+R6
+R7
+w1757179778
+8../../../sources_1/imports/weightMemory.v
+F../../../sources_1/imports/weightMemory.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R3
+nweight@memory

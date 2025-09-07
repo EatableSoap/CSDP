@@ -1,0 +1,49 @@
+# do {Lenet_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 12:11:35 on Sep 07,2025
+# vlog -64 -incr -work xil_defaultlib ../../../sources_1/new/ANNfull.v ../../../sources_1/new/FindMax.v ../../../sources_1/imports/IEEE162IEEE32.v ../../../sources_1/new/IntegrationConvPart.v ../../../sources_1/new/Lenet.v ../../../sources_1/imports/MaxPoolMulti.v ../../../sources_1/imports/MaxPoolSingle.v ../../../sources_1/imports/RFselector.v ../../../sources_1/imports/UsingTheRelu16.v ../../../sources_1/imports/activationFunction.v ../../../sources_1/new/convLayerMulti.v ../../../sources_1/imports/convLayerSingle.v ../../../sources_1/imports/convUnit.v ../../../sources_1/imports/floatAdd.v ../../../sources_1/imports/floatAdd16.v ../../../sources_1/imports/floatMult.v ../../../sources_1/imports/floatMult16.v ../../../sources_1/imports/layer.v ../../../sources_1/imports/max.v ../../../sources_1/new/padding.v ../../../sources_1/imports/processingElement.v ../../../sources_1/imports/processingElement16.v ../../../sources_1/imports/weightMemory.v ../../../sources_1/TB/Lenet_TB.v 
+# -- Skipping module ANNfull
+# -- Skipping module FindMax
+# -- Skipping module IEEE162IEEE32
+# -- Skipping module integrationConv
+# -- Skipping module Lenet
+# -- Skipping module MaxPoolMulti
+# -- Skipping module MaxPoolSingle
+# -- Skipping module RFselector
+# -- Skipping module UsingTheRelu16
+# -- Skipping module activationFunction
+# -- Skipping module convLayerMulti
+# -- Skipping module convLayerSingle
+# -- Skipping module convUnit
+# -- Skipping module floatAdd
+# -- Skipping module floatAdd16
+# -- Skipping module floatMult
+# -- Skipping module floatMult16
+# -- Skipping module layer
+# -- Skipping module max
+# -- Skipping module padding
+# -- Skipping module processingElement
+# -- Skipping module processingElement16
+# -- Skipping module weightMemory
+# -- Skipping module Lenet_TB
+# 
+# Top level modules:
+# 	Lenet_TB
+# End time: 12:11:35 on Sep 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 12:11:35 on Sep 07,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:11:35 on Sep 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
