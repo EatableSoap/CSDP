@@ -37,8 +37,8 @@ module convLayerMulti (
         .W(W),
         .P(P)
     ) pad_inst (
-        .clk(clk),
-        .rst(reset),
+        .clk      (clk),
+        .rst      (reset),
         .image_in (image),
         .image_out(padded_image)
     );

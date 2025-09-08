@@ -13,8 +13,10 @@
 # //
 # do {Lenet_TB_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.Lenet_TB xil_defaultlib.glbl 
-# Start time: 12:11:40 on Sep 07,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 02:13:27 on Sep 08,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../../../sources_1/new/ANNfull.v(214): (vopt-2182) 'address' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 1 FSM in module "ANNfull(fast)".
 # Loading work.Lenet_TB(fast)
 # Loading work.Lenet(fast)
 # Loading work.integrationConv(fast)
@@ -68,5 +70,204 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 12:16:54 on Sep 07,2025, Elapsed time: 0:05:14
-# Errors: 6, Warnings: 0
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/A1/address
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/A1/L1/input_fc \
+sim:/Lenet_TB/UUT/A1/L1/weights \
+sim:/Lenet_TB/UUT/A1/L1/output_fc \
+sim:/Lenet_TB/UUT/A1/L1/selectedInput
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/A1/L2/input_fc \
+sim:/Lenet_TB/UUT/A1/L2/weights \
+sim:/Lenet_TB/UUT/A1/L2/output_fc \
+sim:/Lenet_TB/UUT/A1/L2/selectedInput
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/A1/L3/input_fc \
+sim:/Lenet_TB/UUT/A1/L3/weights \
+sim:/Lenet_TB/UUT/A1/L3/output_fc \
+sim:/Lenet_TB/UUT/A1/L3/selectedInput
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/A1/L4/input_fc \
+sim:/Lenet_TB/UUT/A1/L4/weights \
+sim:/Lenet_TB/UUT/A1/L4/output_fc \
+sim:/Lenet_TB/UUT/A1/L4/selectedInput
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.Lenet_TB(fast)
+# Loading work.Lenet(fast)
+# Loading work.integrationConv(fast)
+# Loading work.convLayerMulti(fast)
+# Loading work.padding(fast)
+# Loading work.convLayerSingle(fast)
+# Loading work.RFselector(fast)
+# Loading work.convUnit(fast)
+# Loading work.processingElement16(fast)
+# Loading work.floatMult16(fast)
+# Loading work.floatAdd16(fast)
+# Loading work.UsingTheRelu16(fast)
+# Loading work.MaxPoolMulti(fast)
+# Loading work.MaxPoolSingle(fast)
+# Loading work.max(fast)
+# Loading work.convLayerMulti(fast__1)
+# Loading work.padding(fast__1)
+# Loading work.convLayerSingle(fast__1)
+# Loading work.RFselector(fast__1)
+# Loading work.convUnit(fast__1)
+# Loading work.UsingTheRelu16(fast__1)
+# Loading work.MaxPoolMulti(fast__1)
+# Loading work.MaxPoolSingle(fast__1)
+# Loading work.convLayerMulti(fast__2)
+# Loading work.padding(fast__2)
+# Loading work.convLayerSingle(fast__2)
+# Loading work.RFselector(fast__2)
+# Loading work.convUnit(fast__2)
+# Loading work.UsingTheRelu16(fast__2)
+# Loading work.MaxPoolMulti(fast__2)
+# Loading work.MaxPoolSingle(fast__2)
+# Loading work.IEEE162IEEE32(fast)
+# Loading work.ANNfull(fast)
+# Loading work.weightMemory(fast)
+# Loading work.weightMemory(fast__1)
+# Loading work.weightMemory(fast__2)
+# Loading work.weightMemory(fast__3)
+# Loading work.layer(fast)
+# Loading work.processingElement(fast)
+# Loading work.floatMult(fast)
+# Loading work.floatAdd(fast)
+# Loading work.activationFunction(fast)
+# Loading work.layer(fast__1)
+# Loading work.layer(fast__2)
+# Loading work.activationFunction(fast__1)
+# Loading work.layer(fast__3)
+# Loading work.FindMax(fast)
+# Loading work.glbl(fast)
+run -all
+# Cur Output is :  6
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/C1/C1out \
+sim:/Lenet_TB/UUT/C1/C1outRelu \
+sim:/Lenet_TB/UUT/C1/MP1out \
+sim:/Lenet_TB/UUT/C1/C2out \
+sim:/Lenet_TB/UUT/C1/C2outRelu \
+sim:/Lenet_TB/UUT/C1/MP2out \
+sim:/Lenet_TB/UUT/C1/C3out \
+sim:/Lenet_TB/UUT/C1/C3outRelu
+add wave -position insertpoint  \
+sim:/Lenet_TB/UUT/C1/CNNinput \
+sim:/Lenet_TB/UUT/C1/iConvOutput
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.Lenet_TB(fast)
+# Loading work.Lenet(fast)
+# Loading work.integrationConv(fast)
+# Loading work.convLayerMulti(fast)
+# Loading work.padding(fast)
+# Loading work.convLayerSingle(fast)
+# Loading work.RFselector(fast)
+# Loading work.convUnit(fast)
+# Loading work.processingElement16(fast)
+# Loading work.floatMult16(fast)
+# Loading work.floatAdd16(fast)
+# Loading work.UsingTheRelu16(fast)
+# Loading work.MaxPoolMulti(fast)
+# Loading work.MaxPoolSingle(fast)
+# Loading work.max(fast)
+# Loading work.convLayerMulti(fast__1)
+# Loading work.padding(fast__1)
+# Loading work.convLayerSingle(fast__1)
+# Loading work.RFselector(fast__1)
+# Loading work.convUnit(fast__1)
+# Loading work.UsingTheRelu16(fast__1)
+# Loading work.MaxPoolMulti(fast__1)
+# Loading work.MaxPoolSingle(fast__1)
+# Loading work.convLayerMulti(fast__2)
+# Loading work.padding(fast__2)
+# Loading work.convLayerSingle(fast__2)
+# Loading work.RFselector(fast__2)
+# Loading work.convUnit(fast__2)
+# Loading work.UsingTheRelu16(fast__2)
+# Loading work.MaxPoolMulti(fast__2)
+# Loading work.MaxPoolSingle(fast__2)
+# Loading work.IEEE162IEEE32(fast)
+# Loading work.ANNfull(fast)
+# Loading work.weightMemory(fast)
+# Loading work.weightMemory(fast__1)
+# Loading work.weightMemory(fast__2)
+# Loading work.weightMemory(fast__3)
+# Loading work.layer(fast)
+# Loading work.processingElement(fast)
+# Loading work.floatMult(fast)
+# Loading work.floatAdd(fast)
+# Loading work.activationFunction(fast)
+# Loading work.layer(fast__1)
+# Loading work.layer(fast__2)
+# Loading work.activationFunction(fast__1)
+# Loading work.layer(fast__3)
+# Loading work.FindMax(fast)
+# Loading work.glbl(fast)
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.Lenet_TB(fast)
+# Loading work.Lenet(fast)
+# Loading work.integrationConv(fast)
+# Loading work.convLayerMulti(fast)
+# Loading work.padding(fast)
+# Loading work.convLayerSingle(fast)
+# Loading work.RFselector(fast)
+# Loading work.convUnit(fast)
+# Loading work.processingElement16(fast)
+# Loading work.floatMult16(fast)
+# Loading work.floatAdd16(fast)
+# Loading work.UsingTheRelu16(fast)
+# Loading work.MaxPoolMulti(fast)
+# Loading work.MaxPoolSingle(fast)
+# Loading work.max(fast)
+# Loading work.convLayerMulti(fast__1)
+# Loading work.padding(fast__1)
+# Loading work.convLayerSingle(fast__1)
+# Loading work.RFselector(fast__1)
+# Loading work.convUnit(fast__1)
+# Loading work.UsingTheRelu16(fast__1)
+# Loading work.MaxPoolMulti(fast__1)
+# Loading work.MaxPoolSingle(fast__1)
+# Loading work.convLayerMulti(fast__2)
+# Loading work.padding(fast__2)
+# Loading work.convLayerSingle(fast__2)
+# Loading work.RFselector(fast__2)
+# Loading work.convUnit(fast__2)
+# Loading work.UsingTheRelu16(fast__2)
+# Loading work.MaxPoolMulti(fast__2)
+# Loading work.MaxPoolSingle(fast__2)
+# Loading work.IEEE162IEEE32(fast)
+# Loading work.ANNfull(fast)
+# Loading work.weightMemory(fast)
+# Loading work.weightMemory(fast__1)
+# Loading work.weightMemory(fast__2)
+# Loading work.weightMemory(fast__3)
+# Loading work.layer(fast)
+# Loading work.processingElement(fast)
+# Loading work.floatMult(fast)
+# Loading work.floatAdd(fast)
+# Loading work.activationFunction(fast)
+# Loading work.layer(fast__1)
+# Loading work.layer(fast__2)
+# Loading work.activationFunction(fast__1)
+# Loading work.layer(fast__3)
+# Loading work.FindMax(fast)
+# Loading work.glbl(fast)
+run -all
+# Cur Output is :  6
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 02:26:32 on Sep 08,2025, Elapsed time: 0:13:05
+# Errors: 38, Warnings: 2

@@ -2,6 +2,7 @@
 
 module weightMemory (
     clk,
+    en,
     address,
     weights
 );
@@ -15,23 +16,24 @@ module weightMemory (
     localparam TOTAL_WEIGHT_SIZE = INPUT_NODES * OUTPUT_NODES;  // 总共有x个权重
 
     input clk;  //时钟信号
+    input en;  // 使能信号
     input [10:0] address;  // 位宽为8，深度为1
     output reg [DATA_WIDTH*OUTPUT_NODES-1:0] weights;  // 存储权重，位宽为32，深度为1
 
     reg     [DATA_WIDTH-1:0] memory[0:TOTAL_WEIGHT_SIZE-1];  // 32位位宽，存储权重
-
     integer                  i;
 
     always @(posedge clk) begin
-        if (address > INPUT_NODES - 1 || address < 0) begin
+        if (!en || address > INPUT_NODES - 1 || address < 0) begin
             weights = 0;
         end else begin
+            // 取出当前 address 对应的一整行权重
             for (i = 0; i < OUTPUT_NODES; i = i + 1) begin
-                weights[(OUTPUT_NODES-1-i)*DATA_WIDTH+:DATA_WIDTH] = memory[(address*OUTPUT_NODES)+i];
+                weights[(OUTPUT_NODES-1-i)*DATA_WIDTH +: DATA_WIDTH] 
+                    <= memory[address*OUTPUT_NODES + i];
             end
         end
     end
-
     initial begin
         $readmemh(file, memory);
     end

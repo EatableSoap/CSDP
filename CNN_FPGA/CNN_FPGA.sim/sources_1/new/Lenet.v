@@ -67,7 +67,7 @@ module Lenet (
             counter = 0;
         end else begin
             counter = counter + 1;
-            if (counter < 7*1793+6*1024*6+12+16*32*29 + 6*2304 + 25 + 32*24*29 + 6*1152 + 30 + 15000) begin
+            if (counter < 75050 + 20) begin
                 reset1 = 1'b0;
             end else begin
                 reset2 = 1'b0;

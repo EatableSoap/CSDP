@@ -8,9 +8,9 @@ module convUnit (
     result
 );
 
-    parameter DATA_WIDTH = 16;  // ע��������16λ��λ��
-    parameter D = 1;  // ������ͨ����
-    parameter F = 5;  // �����˴�С
+    parameter DATA_WIDTH = 16;
+    parameter D = 1;
+    parameter F = 5;
 
     input clk, reset;
     // input [0:D*F*F*DATA_WIDTH-1] image, filter;

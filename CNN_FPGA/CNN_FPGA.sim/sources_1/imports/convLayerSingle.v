@@ -6,7 +6,7 @@ module convLayerSingle (
     image,
     filter,
     outputConv
-);  // ������������
+);
 
     parameter DATA_WIDTH = 16;
     parameter D = 1;  //Depth of the filter
