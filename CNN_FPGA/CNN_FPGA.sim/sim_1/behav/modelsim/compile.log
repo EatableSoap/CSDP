@@ -7,11 +7,10 @@
 # Modifying modelsim.ini
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 02:13:22 on Sep 08,2025
+# Start time: 16:00:32 on Sep 08,2025
 # vlog -64 -incr -work xil_defaultlib ../../../sources_1/new/ANNfull.v ../../../sources_1/new/FindMax.v ../../../sources_1/imports/IEEE162IEEE32.v ../../../sources_1/new/IntegrationConvPart.v ../../../sources_1/new/Lenet.v ../../../sources_1/imports/MaxPoolMulti.v ../../../sources_1/imports/MaxPoolSingle.v ../../../sources_1/imports/RFselector.v ../../../sources_1/imports/UsingTheRelu16.v ../../../sources_1/imports/activationFunction.v ../../../sources_1/new/convLayerMulti.v ../../../sources_1/imports/convLayerSingle.v ../../../sources_1/imports/convUnit.v ../../../sources_1/imports/floatAdd.v ../../../sources_1/imports/floatAdd16.v ../../../sources_1/imports/floatMult.v ../../../sources_1/imports/floatMult16.v ../../../sources_1/imports/layer.v ../../../sources_1/imports/max.v ../../../sources_1/new/padding.v ../../../sources_1/imports/processingElement.v ../../../sources_1/imports/processingElement16.v ../../../sources_1/imports/weightMemory.v ../../../sources_1/TB/Lenet_TB.v 
-# -- Compiling module ANNfull
-# ** Warning: ../../../sources_1/new/ANNfull.v(214): (vlog-2182) 'address' might be read before written in always_comb or always @* block.
-# -- Skipping module FindMax
+# -- Skipping module ANNfull
+# -- Compiling module FindMax
 # -- Skipping module IEEE162IEEE32
 # -- Skipping module integrationConv
 # -- Skipping module Lenet
@@ -28,6 +27,8 @@
 # -- Skipping module floatMult
 # -- Skipping module floatMult16
 # -- Skipping module layer
+# -- Skipping module fp16_cmp
+# -- Skipping module fp32_cmp
 # -- Skipping module max
 # -- Skipping module padding
 # -- Skipping module processingElement
@@ -37,14 +38,14 @@
 # 
 # Top level modules:
 # 	Lenet_TB
-# End time: 02:13:22 on Sep 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
+# End time: 16:00:33 on Sep 08,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 02:13:22 on Sep 08,2025
+# Start time: 16:00:33 on Sep 08,2025
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 02:13:22 on Sep 08,2025, Elapsed time: 0:00:00
+# End time: 16:00:33 on Sep 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -132,7 +132,15 @@ module integrationConv (
     );
     localparam integer MP3_CYCLES = POOL_CYCLES(  /*D=*/ 32,  /*H=*/ 3,  /*W=*/ 3);
 
-    convLayerMulti C1 (
+    convLayerMulti #(
+        .DATA_WIDTH(16),
+        .D(1),
+        .H(32),
+        .W(32),
+        .F(5),
+        .K(6),
+        .P(2)
+    ) C1 (
         .clk       (clk),
         .reset     (reset),
         .image     (CNNinput),
@@ -251,17 +259,53 @@ module integrationConv (
     always @(*) begin
         next_state = state;
         case (state)
-            S_IDLE:  next_state = S_CONV1;
-            S_CONV1: if (state_counter >= C1_CYCLES) next_state = S_RELU1;
-            S_RELU1: if (state_counter >= RELU1_CYCLES) next_state = S_MP1;
-            S_MP1:   if (state_counter >= MP1_CYCLES) next_state = S_CONV2;
-            S_CONV2: if (state_counter >= C2_CYCLES) next_state = S_RELU2;
-            S_RELU2: if (state_counter >= RELU2_CYCLES) next_state = S_MP2;
-            S_MP2:   if (state_counter >= MP2_CYCLES) next_state = S_CONV3;
-            S_CONV3: if (state_counter >= C3_CYCLES) next_state = S_RELU3;
-            S_RELU3: if (state_counter >= RELU3_CYCLES) next_state = S_MP3;
-            S_MP3:   if (state_counter >= MP3_CYCLES) next_state = S_DONE;
-            S_DONE:  next_state = S_DONE;
+            S_IDLE: next_state = S_CONV1;
+            S_CONV1:
+            if (state_counter >= C1_CYCLES) begin
+                // $display("Conv1 Output %h", C1out);
+                next_state = S_RELU1;
+            end
+            S_RELU1:
+            if (state_counter >= RELU1_CYCLES) begin
+                // $display("ReLU1 Output %h", C1outRelu);
+                next_state = S_MP1;
+            end
+            S_MP1:
+            if (state_counter >= MP1_CYCLES) begin
+                // $display("MP1 Output %h", MP1out);
+                next_state = S_CONV2;
+            end
+            S_CONV2:
+            if (state_counter >= C2_CYCLES) begin
+                // $display("Conv2 Output %h", C2out);
+                next_state = S_RELU2;
+            end
+            S_RELU2:
+            if (state_counter >= RELU2_CYCLES) begin
+                // $display("ReLU2 Output %h", C2outRelu);
+                next_state = S_MP2;
+            end
+            S_MP2:
+            if (state_counter >= MP2_CYCLES) begin
+                // $display("MP2 Output %h", MP2out);
+                next_state = S_CONV3;
+            end
+            S_CONV3:
+            if (state_counter >= C3_CYCLES) begin
+                // $display("Conv3 Output %h", C3out);
+                next_state = S_RELU3;
+            end
+            S_RELU3:
+            if (state_counter >= RELU3_CYCLES) begin
+                // $display("ReLU3 Output %h", C3outRelu);
+                next_state = S_MP3;
+            end
+            S_MP3:
+            if (state_counter >= MP3_CYCLES) begin
+                // $display("MP3 Output %h", iConvOutput);
+                next_state = S_DONE;
+            end
+            S_DONE: next_state = S_DONE;
         endcase
     end
 
